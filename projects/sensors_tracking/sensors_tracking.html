@@ -1,0 +1,218 @@
+
+<html>
+<head>
+    <title>sensors_tracking_oh</title>
+    <style type="text/css">
+        body {
+            width: 1200px;
+            text-align: center;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            background-color: #FFF;
+        }
+
+        table {
+            padding: 5px;
+        }
+
+            table.pub_table, td.pub_td1, td.pub_td2 {
+                border-collapse: collapse;
+                border-bottom: 0px solid #9B9B9B;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                width: 800px;
+            }
+
+        td.pub_td1 {
+            width: 100px;
+        }
+
+        td.pub_td2 {
+        }
+
+        tr {
+            background-color: #FFF;
+        }
+
+        div#container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 900px;
+            text-align: left;
+            position: relative;
+            background-color: #F3F3F3;
+        }
+
+        div#DocInfo {
+            color: #9B9B9B;
+            height: 128px;
+        }
+
+        h4, h3, h2 {
+            color: #3B3B3B;
+        }
+
+        h1 {
+            color: #3B3B3B;
+            text-align: center;
+        }
+
+        namesec {
+            color: #3B3B3B;
+            text-align: center;
+            font-size: 130%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 130%;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 130%;
+        }
+
+        h4 {
+            text-align: left;
+        }
+
+        p {
+            color: #5B5B5B;
+            margin-bottom: 20px;
+            font-size: 120%;
+            text-align: justify;
+        }
+
+        li {
+            font-size: 110%;
+        }
+
+        p.caption {
+            color: #9B9B9B;
+            text-align: left;
+            width: 600px;
+            font: 11px helvetica,sans-serif;
+        }
+
+        p.caption2 {
+            color: #9B9B9B;
+            text-align: left;
+            width: 800px;
+            font: 11px helvetica,sans-serif;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        #header_img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        a:link, a:visited {
+            color: #1367a7;
+            text-decoration: none;
+        }
+
+        .section_div {
+            background-color: #FFF;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            border: 1px solid #AAA;
+        }
+
+        body {
+            background-color: #F3F3F3;
+        }
+
+        #personal_info {
+            background-color: #FFF;
+        }
+
+        #paper_title {
+            background-color: #FFF;
+        }
+    </style>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-24665197-4', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="container">
+
+        <div class='section_div'>
+            <table id="paper_title">
+                <tr>
+
+                    <div id="DocInfo">
+                        <h1>Multiple Object Fusion Tracker using a Matching Network for Adaptively Represented Instance Pairs</h1><br>
+                        <h2><a href="https://sangiloh.github.io/">Sang-Il Oh</a> and Hang-Bong Kang</h2>
+                    </div>
+                    <br>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img src="sensors_tracking_main.jpg" width=838 style="border: 1px solid black; float:center; margin-right:1px" />
+                        <figcaption>Figure 1:The overall architecture of MOFT. <font color="blue">The blue box</font>: representation. <font color="green">The green box</font>: matching between target objects and candidates. <font color="yellow">The yellow box</font>: structured fine-tuning. <font color="red">The red box</font>: fusion of tracking results.</figcaption>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h3>Abstract</h3>
+            <p>
+                Multiple-object tracking is affected by various sources of distortion, such as occlusion, illumination variations and motion changes. Overcoming these distortions by tracking on RGB frames, such as shifting, has limitations because of material distortions caused by RGB frames. To overcome these distortions, we propose a multiple-object fusion tracker (MOFT), which uses a combination of 3D point clouds and corresponding RGB frames. The MOFT uses a matching function initialized on large-scale external sequences to determine which candidates in the current frame match with the target object in the previous frame. After conducting tracking on a few frames, the initialized matching function is fine-tuned according to the appearance models of target objects. The fine-tuning process of the matching function is constructed as a structured form with diverse matching function branches. In general multiple object tracking situations, scale variations for a scene occur depending on the distance between the target objects and the sensors. If the target objects in various scales are equally represented with the same strategy, information losses will occur for any representation of the target objects. In this paper, the output map of the convolutional layer obtained from a pre-trained convolutional neural network is used to adaptively represent instances without information loss. In addition, MOFT fuses the tracking results obtained from each modality at the decision level to compensate the tracking failures of each modality using basic belief assignment, rather than fusing modalities by selectively using the features of each modality. Experimental results indicate that the proposed tracker provides state-of-the-art performance considering multiple objects tracking (MOT) and KITTI benchmarks.
+                <br><br>
+
+                <h3>Publication</h3>
+                <ul style="font-weight:bold">
+                    <li>Multiple Objects Fusion Tracker Using a Matching Network for Adaptively Represented Instance Pairs</li>
+                </ul>
+                <blockquote>
+                    <h4>Sang-Il Oh and Hang-Bong Kang</h4>
+                    <h4>Sensors, 17(4), p. 883, 2017.04.18</h4>
+                    <a href="http://www.mdpi.com/1424-8220/17/4/883">[Paper]</a> <a href="">[Video]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:0xxFpmOi7u8J:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWS-iJT9BZumIf-0ZPObP2lvwzgHnvYPP&scisf=4&ct=citation&cd=-1&hl=ko">[BibTeX]</a>
+                </blockquote>
+
+                <h3>Related Publication</h3>
+                <ul style="font-weight:bold">
+                    <li>Object Detection and Classification by Decision-level Fusion for Intelligent Vehicle Systems</li>
+                </ul>
+                <blockquote>
+                    <h4>Sang-Il Oh and Hang-Bong Kang</h4>
+                    <h4>Sensors, 17(1), p. 207, 2017.01.22</h4>
+                    <a href="http://www.mdpi.com/1424-8220/17/1/207/htm">[Paper]</a> <a href="sensors_detection.html">[Project page]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:wd8-7PvGT4cJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWS-ig_7VARfY27b3EGoZ1pGuurK8NjLJ&scisf=4&ct=citation&cd=-1&hl=ko">[BibTeX]</a>
+
+
+
+
+
+
+
+
+                    </table>
+
+
+</body>
+
+</html>

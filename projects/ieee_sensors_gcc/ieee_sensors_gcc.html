@@ -1,0 +1,221 @@
+﻿
+<html>
+<head>
+    <title>IEEE_sensors_GCC_oh</title>
+    <style type="text/css">
+        body {
+            width: 1200px;
+            text-align: center;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            background-color: #FFF;
+        }
+
+        table {
+            padding: 5px;
+        }
+
+            table.pub_table, td.pub_td1, td.pub_td2 {
+                border-collapse: collapse;
+                border-bottom: 0px solid #9B9B9B;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                width: 800px;
+            }
+
+        td.pub_td1 {
+            width: 100px;
+        }
+
+        td.pub_td2 {
+        }
+
+        tr {
+            background-color: #FFF;
+        }
+
+        div#container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 900px;
+            text-align: left;
+            position: relative;
+            background-color: #F3F3F3;
+        }
+
+        div#DocInfo {
+            color: #9B9B9B;
+            height: 128px;
+        }
+
+        h4, h3, h2 {
+            color: #3B3B3B;
+        }
+
+        h1 {
+            color: #3B3B3B;
+            text-align: center;
+        }
+
+        namesec {
+            color: #3B3B3B;
+            text-align: center;
+            font-size: 130%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 130%;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 130%;
+        }
+
+        h4 {
+            text-align: left;
+        }
+
+        p {
+            color: #5B5B5B;
+            margin-bottom: 20px;
+            font-size: 120%;
+            text-align: justify;
+        }
+
+        li {
+            font-size: 110%;
+        }
+
+        p.caption {
+            color: #9B9B9B;
+            text-align: left;
+            width: 600px;
+            font: 11px helvetica,sans-serif;
+        }
+
+        p.caption2 {
+            color: #9B9B9B;
+            text-align: left;
+            width: 800px;
+            font: 11px helvetica,sans-serif;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        #header_img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        a:link, a:visited {
+            color: #1367a7;
+            text-decoration: none;
+        }
+
+        .section_div {
+            background-color: #FFF;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+            border: 1px solid #AAA;
+        }
+
+        body {
+            background-color: #F3F3F3;
+        }
+
+        #personal_info {
+            background-color: #FFF;
+        }
+
+        #paper_title {
+            background-color: #FFF;
+        }
+    </style>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-24665197-4', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+
+<body>
+    <div id="container">
+
+        <div class='section_div'>
+            <table id="paper_title">
+                <tr>
+
+                    <div id="DocInfo">
+                        <h1>Fast Occupancy Grid Filtering Using Grid Cell Clusters From LIDAR and Stereo Vision Sensor Data</h1><br>
+                        <h2><a href="http://cvml.catholic.ac.kr/oh.html">Sang-Il Oh</a> and Hang-Bong Kang</h2>
+                    </div>
+                    <br>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img src="ieee_sensors_gcc_main.jpg" width=838 style="border: 1px solid black; float:center; margin-right:1px" />
+                        <figcaption>Figure 1:Particles from a multi-layer LIDAR sensor are assigned a superpixel index based on the superpixels of an RGB image. Each color delineates each superpixel index. (a) superpixels of an RGB image and projected particles, (b) assigned superpixel indices of particles from (a), (c) details of the red box in (b), (d) GCC map using (b), and (e) details of the red box in (d). </figcaption>
+                    </td>
+                </tr>
+            </table>
+
+
+            <h3>Abstract</h3>
+            <p>
+                Occupancy grid filtering is important for navigation and localization in dynamic environments. The techniques that have been proposed in past research, such as the Bayesian occupancy filter and the sequential Monte Carlo Bayesian occupancy filter, involve the independent consideration of all grid cells, and thus are inaccurate and computationally expensive. To solve this problem, we propose a fast occupancy grid filtering method that uses a grid state map. We apply a superpixel-based clustering concept called a Grid Cell Cluster (GCC) to three-dimensional (3D) particles measured using LIght Detection And Ranging (LIDAR) and dense depth maps extracted from a stereo vision sensor. The GCC locates a connection among similar data items according to certain criteria. In our proposed method, a GCC consisting of several grid cells has one dynamic state. Thus, we can reduce the computational cost and the number of computational errors by using the same prediction matrices as are generated from the grid cells belonging to an object. Our method was evaluated on the KITTI benchmark dataset. The results showed that the proposed method was faster (by approximately 38.9%) than Mekahanacha�셲 method and approximately 12% more accurate (on the intersection-over-union (IoU) metric) than prevalent techniques.
+                <br><br>
+
+                <h3>Publication</h3>
+                <ul style="font-weight:bold">
+                    <li>Fast Occupancy Grid Filtering Using Grid Cell Clusters From LIDAR and Stereo Vision Sensor Data</li>
+                </ul>
+                <blockquote>
+                    <h4>Sang-Il Oh and Hang-Bong Kang</h4>
+                    <h4>IEEE Sensors Journal, 16(19), p. 7258, 2016.10.01</h4>
+                    <a href="http://ieeexplore.ieee.org/abstract/document/7536165/">[Paper]</a> <a href="">[Video]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:Rbh5Qdp9Je8J:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWS-oJKi0dYIZF4v0caAkFhDdtL3PL6gp&scisf=4&ct=citation&cd=-1&hl=ko">[BibTeX]</a>
+                </blockquote>
+
+                <h3>Related Publication</h3>
+                <ul style="font-weight:bold">
+                    <li>A Modified Sequential Monte Carlo Bayesian Occupancy Filter Using Linear Opinion Pool for Grid Mapping</li>
+                </ul>
+                <blockquote>
+                    <h4>Sang-Il Oh and Hang-Bong Kang</h4>
+                    <h4>Proceedings of the IEEE International Conference on Computer Vision Workshops (2015)</h4>
+                    <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015_workshops/w9/html/Oh_A_Modified_Sequential_ICCV_2015_paper.html">[Paper]</a> <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:VHbX7_MSA04J:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWS-ofL6g0YeqatGOaQM2EUDEnDuofD_S&scisf=4&ct=citation&cd=-1&hl=ko">[BibTeX]</a>
+                </blockquote>
+
+
+
+
+
+
+
+
+
+
+                </table>
+
+
+</body>
+
+</html>
